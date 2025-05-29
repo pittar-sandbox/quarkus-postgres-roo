@@ -2,7 +2,7 @@ schemaVersion: 2.2.2
 attributes:
   controller.devfile.io/storage-type: per-workspace
 metadata:
-  name: ai-assitant-continue
+  name: ai-assitant-roo
   provider: Red Hat
   icon: https://design.jboss.org/quarkus/logo/final/SVG/quarkus_icon_rgb_default.svg
   website: https://quarkus.io
@@ -12,14 +12,14 @@ metadata:
     - Java
     - Quarkus
     - PostgreSQL
-    - Continue
+    - Roo
   projectType: Quarkus
   language: Java
 projects:
-  - name: "ai-assitant-continue"
+  - name: "ai-assitant-roo"
     git:
       remotes:
-        origin: "https://github.com/pittar-sandbox/quarkus-postgres-continue"
+        origin: "https://github.com/pittar-sandbox/quarkus-postgres-roo"
       checkoutFrom:
         revision: "main"
         remote: origin
@@ -95,7 +95,7 @@ commands:
     exec:
       label: "1. Package the application"
       component: tools
-      workingDir: ${PROJECTS_ROOT}/ai-assitant-continue
+      workingDir: ${PROJECTS_ROOT}/ai-assitant-roo
       commandLine: "./mvnw package"
       group:
         kind: build
@@ -104,7 +104,7 @@ commands:
     exec:
       label: "2. Start Development mode (Hot reload + debug)"
       component: tools
-      workingDir: ${PROJECTS_ROOT}/ai-assitant-continue
+      workingDir: ${PROJECTS_ROOT}/ai-assitant-roo
       commandLine: "./mvnw compile quarkus:dev"
       group:
         kind: run
