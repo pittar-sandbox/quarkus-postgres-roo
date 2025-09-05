@@ -115,7 +115,7 @@ commands:
       component: tools
       # download several extensions using curl
       commandLine: |
-        curl https://open-vsx.org/api/RooVeterinaryInc/roo-cline/3.18.5/file/RooVeterinaryInc.roo-cline-3.18.5.vsix --location -o /tmp/roo.vsix
+        curl https://open-vsx.org/api/RooVeterinaryInc/roo-cline/3.26.7/file/RooVeterinaryInc.roo-cline-3.26.7.vsix --location -o /tmp/roo.vsix
 events:
   postStart:
     - add-extensions
